@@ -1,1 +1,153 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <link href="F:\Program Files\fontawesome\css\all.css" rel="stylesheet">
+    <title>Advance calling icon</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(74, 74, 179);
+        }
+        
+        .mainbox {
+            width: 350px;
+            height: 350px;
+            border: 2px solid yellow;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(9, 9, 31);
+            border-radius: 50%;
+        }
+        
+        .parent {
+            transform: translate(-30px, 30px) rotate(-45deg);
+        }
+        
+        .parent,
+        .child,
+        .subchild {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 20px solid transparent;
+            border-right: 20px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: ani3 4s ease-out infinite;
+        }
+        
+        @keyframes ani3 {
+            0% {
+                border-right: 20px solid transparent;
+            }
+            20% {
+                border-right: 20px solid transparent;
+            }
+            40% {
+                border-right: 20px solid transparent;
+            }
+            60% {
+                border-right: 20px solid rgba(34, 253, 253, .3);
+            }
+            80% {
+                border-right: 20px solid rgba(34, 253, 253, 1);
+            }
+            100% {
+                border-right: 20px solid transparent;
+            }
+        }
+        
+        .child {
+            width: 80%;
+            height: 80%;
+            animation: ani2 4s ease-out infinite;
+        }
+        
+        @keyframes ani2 {
+            0% {
+                border-right: 20px solid transparent;
+            }
+            20% {
+                border-right: 20px solid transparent;
+            }
+            40% {
+                border-right: 20px solid rgba(34, 253, 253, .3);
+            }
+            60% {
+                border-right: 20px solid rgba(34, 253, 253, 1);
+            }
+            80% {
+                border-right: 20px solid rgba(34, 253, 253, .3);
+            }
+            100% {
+                border-right: 20px solid transparent;
+            }
+        }
+        
+        .subchild {
+            width: 65%;
+            height: 65%;
+            animation: ani1 4s ease-out infinite;
+        }
+        
+        @keyframes ani1 {
+            0% {
+                border-right: 20px solid transparent;
+            }
+            20% {
+                border-right: 20px solid rgba(34, 253, 253, .3);
+            }
+            40% {
+                border-right: 20px solid rgba(34, 253, 253, 1);
+            }
+            60% {
+                border-right: 20px solid rgba(34, 253, 253, .3);
+            }
+            80% {
+                border-right: 20px solid rgba(34, 253, 253, .3);
+            }
+            100% {
+                border-right: 20px solid transparent;
+            }
+        }
+        
+        #call {
+            /* color: rgb(169, 248, 248); */
+            color: aqua;
+            transform: rotate(45deg);
+            font-size: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="parent">
+            <div class="child">
+                <div class="subchild">
+                    <i id="call" class="fas fa-phone-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
